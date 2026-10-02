@@ -7,42 +7,35 @@ Meshtastic ESP32-S3 SuperMini + SX1262 自制板
 - LoRa：SX1262
 - Display：I2C OLED
 - Keys：物理按键
-引脚定义
-SX1262 LoRa
-SX1262
-ESP32-S3 GPIO
-NSS
-13
-MOSI
-12
-DIO1
-11
-NRST
-1
-SCK
-8
-MISO
-10
-BUSY
-9
-OLED I2C
-OLED
-ESP32-S3 GPIO
-SCK
-7
-SDA
-6
-按键
-Key
-ESP32-S3 GPIO
-KEY1
-2
-KEY2
-3
-KEY3
-4
-KEY4
-5
+## 引脚定义
+
+### SX1262 LoRa
+
+|SX1262|ESP32\-S3 GPIO|
+|---|---|
+|NSS|13|
+|MOSI|12|
+|DIO1|11|
+|NRST|1|
+|SCK|8|
+|MISO|10|
+|BUSY|9|
+
+### OLED I2C
+
+|OLED|ESP32\-S3 GPIO|
+|---|---|
+|SCK|7|
+|SDA|6|
+
+### 按键
+
+|Key|ESP32\-S3 GPIO|
+|---|---|
+|KEY1|2|
+|KEY2|3|
+|KEY3|4|
+|KEY4|5|
 PlatformIO 编译环境
 - PlatformIO Core：6.1.19
 - 平台：pioarduino /arduino-esp32
