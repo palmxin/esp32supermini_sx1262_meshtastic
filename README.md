@@ -46,16 +46,8 @@ KEY4
 PlatformIO 编译环境
 - PlatformIO Core：6.1.19
 - 平台：pioarduino /arduino-esp32
-- 内存配置：board_build.arduino.memory_type = qio_qspi
-⚠️ 不要使用 qio_opi，本模组为 QSPI 2MB PSRAM，OPI 会直接 PSRAM 初始化 panic 崩溃。
-Variant 配置要点
-1. variant.h 必须定义：#define BOARD_HAS_PSRAM
-2. 在 pins_arduino.h 中按照上表映射 SX1262、OLED、按键 GPIO
-3. 编译前务必执行完整清理，避免旧参数残留：
-pio run -e diy_s3_sx1262 -t clean
-rm -rf .pio
-pio run -e diy_s3_sx1262
-编译 & 烧录
+
+
 # 完整编译
 pio run -e diy_s3_sx1262
 
